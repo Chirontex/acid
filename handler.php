@@ -55,6 +55,8 @@ if (isset($_POST['url']) &&
 
             echo $output.date('H:i:s');
 
+            curl_close($ch);
+
         }
 
     } else echo 'Error: Access error; -2';
